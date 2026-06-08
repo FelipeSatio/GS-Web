@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Solution - Nexus | Monitoramento de Detritos Orbitais</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="tema-escuro">
+
+  <nav id="navbar">
+    <div class="nav-logo">Global Solution - Nexus</div>
+    <ul class="nav-links">
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#tecnologia">Tecnologia</a></li>
+      <li><a href="#objetivos">Objetivos</a></li>
+      <li><a href="#publico">Público-alvo</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </nav>
+
+  <section id="hero">
+    <div class="slideshow">
+      <div class="slide ativo">
+        <div class="slide-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1400&q=80" alt="Órbita Terrestre" />
+        <div class="slide-texto">
+          <h1>Detritos Orbitais</h1>
+          <p>Mais de 27.000 fragmentos rastreados ameaçam satélites ativos e a segurança das missões espaciais ao redor do planeta.</p>
+          <a href="#problema" class="btn-hero">Saiba Mais 🛸</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=1400&q=80" alt="Satélite em órbita" />
+        <div class="slide-texto">
+          <h1>Monitoramento Orbital</h1>
+          <p>Sistemas de rastreamento em tempo real identificam trajetórias de risco e calculam probabilidades de colisão antes que ocorram.</p>
+          <a href="#tecnologia" class="btn-hero">Conheça a Tecnologia 🛰️</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=80" alt="Terra do espaço" />
+        <div class="slide-texto">
+          <h1>Proteção da Órbita</h1>
+          <p>Preservar a órbita terrestre é preservar o futuro — comunicações, clima, GPS e segurança dependem de satélites livres de colisões.</p>
+          <a href="#beneficios" class="btn-hero">Ver Benefícios 🌎</a>
+        </div>
+      </div>
+
+      <button class="slide-btn anterior" id="btnAnterior">&#10094;</button>
+      <button class="slide-btn proximo" id="btnProximo">&#10095;</button>
+
+      <div class="slide-dots" id="slideDots"></div>
+    </div>
+  </section>
+
+  <section id="temas">
+    <div class="container">
+      <h2>🎨 Escolha o Tema</h2>
+      <div class="botoes-tema">
+        <button class="btn-tema" id="temaEscuro" onclick="trocarTema('tema-escuro')">🌌 Espacial</button>
+        <button class="btn-tema" id="temaAzul" onclick="trocarTema('tema-azul')">🌊 Oceânico</button>
+        <button class="btn-tema" id="temaClaro" onclick="trocarTema('tema-claro')">☀️ Solar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="problema">
+    <div class="container">
+      <h2>🔴 O Problema</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icone">💥</div>
+          <h3>Colisões em Cascata</h3>
+          <p>O fenômeno Kessler prevê que colisões entre detritos geram novos fragmentos em cadeia, podendo tornar certas órbitas completamente inutilizáveis por séculos.</p>
+        </div>
+        <div class="card">
+          <div class="card-icone">📡</div>
+          <h3>Satélites em Risco</h3>
+          <p>Mais de 3.000 satélites ativos compartilham a órbita com mais de 27.000 fragmentos rastreados — e centenas de milhares de detritos menores não detectáveis.</p>
+        </div>
+        <div class="card">
+          <div class="card-icone">⚠️</div>
+          <h3>Lacuna no Rastreamento</h3>
+          <p>Objetos menores que 10 cm não são rastreados de forma sistemática, porém viajam a mais de 28.000 km/h — velocidade suficiente para destruir um satélite inteiro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologia">
+    <div class="container">
+      <h2>🛰️ A Tecnologia</h2>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <span class="tech-num">01</span>
+          <h3>Radar e Rastreamento Óptico</h3>
+          <p>Redes de radares terrestres e telescópios ópticos monitoram continuamente objetos em LEO, MEO e GEO, atualizando catálogos orbitais em tempo real.</p>
+        </div>
+        <div class="tech-item">
+          <span class="tech-num">02</span>
+          <h3>Modelos Preditivos de Colisão</h3>
+          <p>Algoritmos de propagação orbital como SGP4 e modelos de perturbação calculam conjunções de risco com dias de antecedência, gerando alertas automáticos.</p>
+        </div>
+        <div class="tech-item">
+          <span class="tech-num">03</span>
+          <h3>Dashboard de Situação Orbital</h3>
+          <p>Interface web interativa com visualização 3D da órbita, mapa de densidade de detritos e painel de alertas de aproximação crítica para operadores de satélites.</p>
+        </div>
+        <div class="tech-item">
+          <span class="tech-num">04</span>
+          <h3>Manobras Evasivas Automatizadas</h3>
+          <p>Integração com sistemas de propulsão de satélites para execução autônoma de manobras evasivas quando a probabilidade de colisão supera limiares críticos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="objetivos">
+    <div class="container">
+      <h2>🎯 Objetivos</h2>
+      <ul class="lista-objetivos">
+        <li>✅ Rastrear e catalogar detritos orbitais em tempo real com alta precisão</li>
+        <li>✅ Reduzir o risco de colisões com alertas antecipados de conjunção orbital</li>
+        <li>✅ Desenvolver modelo preditivo de densidade de detritos para os próximos 50 anos</li>
+        <li>✅ Apoiar agências espaciais e operadores privados com dados de situação orbital</li>
+        <li>✅ Contribuir com os ODS 9, 13 e 17 da ONU — inovação, clima e parcerias globais</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="publico">
+    <div class="container">
+      <h2>👥 Público-alvo</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icone">🛰️</div>
+          <h3>Operadores de Satélites</h3>
+          <p>Empresas e agências que operam satélites ativos e precisam de alertas de conjunção e dados precisos para decisões de manobra evasiva.</p>
+        </div>
+        <div class="card">
+          <div class="card-icone">🚀</div>
+          <h3>Agências Espaciais</h3>
+          <p>NASA, ESA, AEB e outras agências que necessitam de situação orbital atualizada para planejar lançamentos e missões com segurança.</p>
+        </div>
+        <div class="card">
+          <div class="card-icone">🏛️</div>
+          <h3>Formuladores de Política</h3>
+          <p>Governos e organismos internacionais que precisam de dados para criar regulações de mitigação de detritos e acordos multilaterais de uso orbital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <div class="container">
+      <h2>✨ Benefícios</h2>
+      <div class="beneficios-grid">
+        <div class="beneficio">
+          <div class="beneficio-num">27k+</div>
+          <p>Objetos rastreados atualmente em órbita terrestre pelo US Space Surveillance Network</p>
+        </div>
+        <div class="beneficio">
+          <div class="beneficio-num">500k+</div>
+          <p>Fragmentos estimados entre 1 e 10 cm — grandes demais para ignorar, pequenos demais para rastrear</p>
+        </div>
+        <div class="beneficio">
+          <div class="beneficio-num">28k</div>
+          <p>Quilômetros por hora em que detritos orbitam — velocidade que torna qualquer impacto catastrófico</p>
+        </div>
+        <div class="beneficio">
+          <div class="beneficio-num">72h</div>
+          <p>Janela de antecedência para alertas de conjunção que permitem manobras evasivas seguras</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="container">
+      <h2>🧠 Quiz: Você sabe sobre Detritos Orbitais?</h2>
+      <div id="quiz-box">
+        <div id="quiz-progresso">
+          <span id="quiz-num-pergunta">Pergunta 1 de 10</span>
+          <div class="barra-progresso">
+            <div class="barra-preenchimento" id="barraPreenchimento"></div>
+          </div>
+        </div>
+        <p id="quiz-pergunta"></p>
+        <div id="quiz-opcoes"></div>
+        <p id="quiz-feedback"></p>
+        <button id="btn-proximo-quiz" onclick="proximaPergunta()" style="display:none">Próxima ➡️</button>
+      </div>
+      <div id="quiz-resultado" style="display:none">
+        <h3 id="resultado-titulo"></h3>
+        <p id="resultado-texto"></p>
+        <p id="resultado-pontos"></p>
+        <button onclick="reiniciarQuiz()">🔄 Jogar Novamente</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>📬 Entre em Contato</h2>
+      <p class="form-subtitulo">Tem interesse no projeto Nexus? Mande sua mensagem!</p>
+      <form id="formContato" onsubmit="return false;">
+        <div class="form-grupo">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" placeholder="Seu nome" />
+          <span class="erro" id="erro-nome"></span>
+        </div>
+        <div class="form-grupo">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" placeholder="seu@email.com" />
+          <span class="erro" id="erro-email"></span>
+        </div>
+        <div class="form-grupo">
+          <label for="assunto">Assunto *</label>
+          <input type="text" id="assunto" placeholder="Assunto da mensagem" />
+          <span class="erro" id="erro-assunto"></span>
+        </div>
+        <div class="form-grupo">
+          <label for="mensagem">Mensagem *</label>
+          <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+          <span class="erro" id="erro-mensagem"></span>
+        </div>
+        <button type="button" onclick="enviarFormulario()" class="btn-enviar">Enviar Mensagem 🚀</button>
+        <div id="sucesso-form" style="display:none" class="sucesso-msg">
+          ✅ Mensagem enviada com sucesso! Entraremos em contato em breve.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Global Solution - Nexus | Monitoramento de Detritos Orbitais 🛸</p>
+    <p>Desenvolvido com HTML, CSS e JavaScript puro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

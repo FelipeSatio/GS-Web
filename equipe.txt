@@ -1,0 +1,23 @@
+======================================
+  GLOBAL SOLUTION - NEXUS
+  Tecnologia Espacial
+======================================
+
+INTEGRANTES DA EQUIPE:
+----------------------
+Nome: [Raphael dos santos benevides]
+RM:   [ RM: 573378]
+
+Nome: [Lucas Rodrigo Gomes Pinheiro]
+RM:   [RM: 572580]
+
+Nome: [Felipe Satio Machado Morita]
+RM:   [RM: 568859]
+
+Nome: [Felipe Medino Neves]
+RM:   [RM: 573287]
+
+--------------------------------------
+LINK DO REPOSITÓRIO GITHUB:
+
+--------------------------------------
